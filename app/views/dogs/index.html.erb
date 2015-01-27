@@ -1,0 +1,7 @@
+<h1>Adopt a dog!  Here are the current dogs we have:</h1>
+<% @dogs.each do |dog| %>
+  <div><%= dog.name %> is a <%= dog.breed %> that is <%= dog.age.to_i %> years old.</div>
+<% end %>
+
+<a href = "/dogs/new"> Add a new dog
+</a>
